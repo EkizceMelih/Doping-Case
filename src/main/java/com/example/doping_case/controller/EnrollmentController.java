@@ -22,7 +22,6 @@ public class EnrollmentController {
         this.enrollmentService = enrollmentService;
     }
 
-    // --- YENİ EKLENDİ (Öğretmen paneli öğrenci detay sayfası için) ---
     @GetMapping("/student/{studentId}")
     public List<EnrollmentInfoDTO> getByStudent(@PathVariable Long studentId) {
         return enrollmentService.getByStudentId(studentId);
@@ -59,7 +58,6 @@ public class EnrollmentController {
         return enrollmentService.finalizeTest(enrollmentId);
     }
     
-    // --- YENİ EKLENDİ (Geliştirme sırasında öğrenciyi sıfırlamak için) ---
     @DeleteMapping("/student/{studentId}")
     public ResponseEntity<Void> deleteEnrollmentsByStudent(@PathVariable Long studentId) {
         enrollmentService.deleteEnrollmentsByStudentId(studentId);
@@ -67,7 +65,7 @@ public class EnrollmentController {
     }
     
     /* // Hata verdiği için bu metot kaldırıldı. İhtiyaç duyulursa,
-    // EnrollmentInfoDTO listesi döndürecek şekilde yeniden yazılmalıdır.
+    // EnrollmentInfoDTO listesi döndürecek şekilde yeniden yazmalıyım.
     @GetMapping
     public List<Enrollment> getAllEnrollments() {
         return enrollmentService.getAllEnrollments();

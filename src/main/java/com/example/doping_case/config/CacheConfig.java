@@ -14,7 +14,6 @@ public class CacheConfig {
 
     @Bean
     public CacheManager cacheManager() {
-        // Uygulamamızda kullanacağımız tüm önbellek isimlerini burada tanımlıyoruz.
         // Spring, uygulama başlarken bu isimlerde önbellekler oluşturacak.
         ConcurrentMapCacheManager cacheManager = new ConcurrentMapCacheManager(
             "tests", 

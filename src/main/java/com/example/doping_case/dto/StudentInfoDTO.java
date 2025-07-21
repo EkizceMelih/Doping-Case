@@ -1,6 +1,5 @@
 package com.example.doping_case.dto;
 
-// Sadece öğrenci listesi için gerekli bilgileri içerir
 public class StudentInfoDTO {
     private Long id;
     private String firstName;

@@ -1,6 +1,5 @@
 package com.example.doping_case.dto;
 
-// Sadece test listesi için gerekli bilgileri içerir
 public class TestInfoDTO {
     private Long id;
     private String testName;

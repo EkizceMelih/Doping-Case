@@ -5,17 +5,17 @@ import java.util.List;
 public class QuizDTO {
     private Long enrollmentId;
     private String testName;
-    private Long studentId; // <-- BU SATIRI EKLEYİN
+    private Long studentId;
     private List<QuestionDTO> questions;
 
     // Constructors, Getters, Setters
      public QuizDTO(Long enrollmentId, String testName, Long studentId, List<QuestionDTO> questions) {
         this.enrollmentId = enrollmentId;
         this.testName = testName;
-        this.studentId = studentId; // <-- BU SATIRI EKLEYİN
+        this.studentId = studentId; 
         this.questions = questions;
     }
-    // --- YENİ GETTER/SETTER EKLEYİN ---
+    
     public Long getStudentId() { return studentId; }
     public void setStudentId(Long studentId) { this.studentId = studentId; }
     public Long getEnrollmentId() { return enrollmentId; }

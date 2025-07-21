@@ -43,7 +43,6 @@ class StudentServiceTest {
     @Test
     void createStudent_shouldReturnSavedStudent() {
         // ARRANGE (Hazırlık): Testin koşullarını hazırlarız.
-        // Sahte repository'nin save() metodu çağrıldığında ne yapacağını söylüyoruz:
         // "Sana verilen herhangi bir Student nesnesini kaydet ve aynısını geri döndür."
         when(studentRepository.save(any(Student.class))).thenReturn(student);
 

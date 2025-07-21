@@ -28,7 +28,6 @@ public class TestController {
         return testService.createTest(test);
     }
 
-    // --- KRİTİK DÜZELTME BURADA ---
     // Bu metot artık Entity listesi yerine DTO listesi döndürüyor.
     @GetMapping
     public List<TestInfoDTO> getAllTests() {
