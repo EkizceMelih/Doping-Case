@@ -1,0 +1,13 @@
+package com.example.doping_case;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class DopingCaseApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

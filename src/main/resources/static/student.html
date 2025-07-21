@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Öğrenci Portalı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Öğrenci Portalı</h1>
+        <a href="index.html" class="nav-button">&larr; Öğretmen Paneline Git</a>
+    </header>
+    
+    <main class="student-portal-container">
+        <section class="panel">
+            <h2>Öğrenci Seçimi</h2>
+            <p class="subtitle">Lütfen testlerini görüntülemek için bir öğrenci seçin.</p>
+            <select id="student-selector" class="entity-form">
+                <option value="">Lütfen bir öğrenci seçin...</option>
+                </select>
+        </section>
+
+        <div id="student-tests-section" class="dashboard-grid" style="display: none; padding-top: 0;">
+            <div class="panel">
+                <section>
+                    <h2>Katılabileceğin Testler</h2>
+                    <div class="list-container">
+                        <ul id="available-tests-list">
+                            </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="panel">
+                <section>
+                    <h2>Tamamladığın Testler ve Sonuçların</h2>
+                    <div class="list-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Test Adı</th>
+                                    <th>Skor</th>
+                                </tr>
+                            </thead>
+                            <tbody id="completed-tests-table-body">
+                                </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/student.js"></script>
+</body>
+</html>

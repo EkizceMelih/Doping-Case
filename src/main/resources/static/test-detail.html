@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Detayları</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="test-name-header">Test Yükleniyor...</h1>
+    <a href="index.html">&larr; Tüm Testlere Geri Dön</a>
+
+    <hr>
+
+    <section>
+        <h2>Yeni Soru Ekle</h2>
+        <form id="question-form">
+            <textarea name="questionText" placeholder="Soru metnini buraya yazın..." required rows="3" style="width: 100%;"></textarea>
+            <button type="submit">Soruyu Ekle</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Teste Ait Sorular</h2>
+        <div id="questions-container">
+            </div>
+    </section>
+
+    <script src="js/test-detail.js"></script>
+</body>
+</html>
